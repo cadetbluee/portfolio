@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  position: sticky;
+  align-items: end;
+  justify-content: space-between;
+  width: 90%;
+  z-index: 3;
+  min-height: 60pt;
+  /* background-color: wheat; */
+}
+header > h1 {
+  margin-left: 56pt;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h1 > a {
+  text-decoration: none;
+  color: gray;
+}
+h1 > a:hover {
+  color: darkgray;
+}
+.category {
+  display: flex;
+  list-style: none;
+  /* margin: 10pt; */
+}
+.category > li {
+  padding-left: 10pt;
+  padding-bottom: 4pt;
+}
+.category > li > a {
+  text-decoration: none;
+  color: black;
+}
+.category > li > a:hover {
+  color: gray;
+}

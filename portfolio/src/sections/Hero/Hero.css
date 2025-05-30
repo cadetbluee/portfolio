@@ -1,0 +1,24 @@
+.hero {
+  height: 88vh;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  width: 88%;
+}
+.cta-button {
+  border: none;
+}
+.cta-button:hover {
+  color: cadetblue;
+}
+.title {
+  color: cadetblue;
+  font-size: 360%;
+  height: 300pt;
+}
+.decoration {
+  position: absolute;
+  margin-left: 30%;
+  margin-bottom: 20%;
+  z-index: 1;
+}

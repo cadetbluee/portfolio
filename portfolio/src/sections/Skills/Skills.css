@@ -1,0 +1,57 @@
+.experience {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 20%;
+  width: 88%;
+}
+.experience > h2 {
+  font-size: 60pt;
+  color: rgba(57, 87, 88, 1);
+  z-index: 1;
+}
+.spikes {
+  position: absolute;
+  height: 100pt;
+  margin-left: -2%;
+  margin-top: 2%;
+}
+
+.skills-section,
+.certificates-section,
+.awards-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section h3,
+.certificates-section h3,
+.awards-section h3 {
+  font-size: 24pt;
+  margin-bottom: 4%;
+  color: rgba(57, 87, 88, 1);
+}
+
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-row {
+  display: flex;
+  gap: 16px;
+}
+
+.label {
+  font-weight: bold;
+  width: 100px;
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.date {
+  color: gray;
+  font-size: 0.9em;
+  margin-left: 8px;
+}

@@ -1,0 +1,73 @@
+.projects-section {
+  width: 88%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.projects-title {
+  font-size: 60px;
+  color: #395758;
+  margin-bottom: 8rem;
+  margin-top: 16rem;
+}
+
+.project-timeline {
+  text-align: center;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  width: 25%;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.project-logo {
+  height: 80px;
+  margin: 0 auto 1rem;
+  /* 가운데 정렬을 위한 속성 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-date {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.tags span {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 4px;
+  color: #395758;
+}

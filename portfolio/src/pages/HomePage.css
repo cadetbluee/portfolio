@@ -1,5 +1,19 @@
 /* HomePage.css */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+.section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,55 +21,25 @@
   align-items: center;
   background-color: #f9f9f9;
   color: #333;
+  width: 88%;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: cadetblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 
-.homepage-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.homepage-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #222;
-}
-
-.homepage-subtitle {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.homepage-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.homepage-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  max-width: 300px;
-  flex: 1;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.card-description {
-  font-size: 1rem;
-  color: #555;
-}
-
-.homepage-footer {
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #888;
+.scroll-to-top:hover {
+  opacity: 1;
 }

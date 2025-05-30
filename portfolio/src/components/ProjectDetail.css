@@ -1,0 +1,58 @@
+.project-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 88%;
+}
+
+.project-info {
+  flex: 1 1 400px;
+  /* max-width: 500px; */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 8%;
+}
+
+.project-logo-large {
+  /* width: 80px; */
+  height: 80px;
+}
+
+.title-highlight {
+  color: #f14d70;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.info-section > div,
+.env-section > div {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin-top: 1.5rem;
+  color: #e82c55;
+  font-weight: bold;
+}
+
+.project-screenshots {
+  flex: 1 1 300px;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+  max-width: 300px;
+}
+
+.screenshot-img {
+  width: 50%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

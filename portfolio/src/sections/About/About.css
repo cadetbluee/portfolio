@@ -1,9 +1,18 @@
-.section {
-  min-height: 100vh;
+.about {
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
-  color: #333;
+  padding-top: 20%;
+  width: 88%;
+}
+.about > h2 {
+  color: rgba(57, 87, 88, 1);
+  font-size: 60pt;
+  z-index: 1;
+}
+.ornament {
+  position: absolute;
+  height: 100pt;
+  margin-left: 28%;
+  margin-top: 2%;
 }
