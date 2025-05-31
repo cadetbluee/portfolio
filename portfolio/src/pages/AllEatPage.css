@@ -1,0 +1,174 @@
+.ae-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 88%;
+  margin-bottom: 10%;
+  justify-content: start;
+}
+.ae-main-img {
+  height: 60vh;
+}
+.ae-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ae-readme {
+  border: none;
+}
+.ae-readme:hover {
+  color: #326bff;
+}
+.ae-logo {
+  /* width: 80px; */
+  height: 80px;
+}
+.ae-title-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 16%;
+  margin-bottom: 8%;
+}
+.ae-title {
+  color: #326bff;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: -3pt;
+}
+.ae-sub-title {
+  color: #326bff;
+
+  font-weight: bold;
+}
+.ae-origin {
+  /* width: 36%; */
+  display: flex;
+}
+@media (max-width: 768px) {
+  .ae-origin {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; /* 필요 시 추가 */
+  }
+}
+.ae-origin-text {
+  margin-left: 4%;
+}
+
+p {
+  word-break: keep-all;
+  font-size: 1.2em;
+}
+.ae-develop {
+  width: 88%;
+}
+.ae-circle {
+  width: 35vh;
+  height: 70vh;
+  border-radius: 0 35vh 35vh 0;
+  background-color: #9b8323;
+
+  position: absolute;
+
+  margin-top: 50%;
+  z-index: -1;
+  margin-left: -6%;
+}
+.ae-circle-bg {
+  width: 35vh;
+  height: 70vh;
+  border-radius: 0 35vh 35vh 0;
+  background-color: #fff;
+
+  position: absolute;
+
+  margin-top: 50%;
+  margin-left: -6%;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+.ae-feature-block {
+  display: flex;
+  align-items: center;
+}
+.ae-feature-text > h3 {
+  color: #326bff;
+  font-weight: bold;
+}
+.ae-img {
+  width: 33%;
+  float: right;
+  padding: 30pt;
+  z-index: 3;
+}
+.cpr-message {
+  display: flex;
+  align-items: center;
+}
+.add-meal-text > h3 {
+  color: black;
+}
+.add-meal-title {
+  color: black;
+  font-size: 24pt;
+  margin-top: 10%;
+}
+.troubleshooting {
+  width: 88%;
+}
+
+.ts-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.ae-ts-title {
+  font-size: 1.5rem;
+  color: #326bff;
+  font-weight: bold;
+}
+
+.ts-subtitle {
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.ts-desc {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.ts-problems,
+.ts-solutions,
+.ts-result {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.ts-problems p,
+.ts-solutions p,
+.ts-result p {
+  margin: 0.4rem 0;
+}
+
+.ts-code-img {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ts-code-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

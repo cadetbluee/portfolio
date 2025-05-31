@@ -1,0 +1,173 @@
+.fo-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 88%;
+
+  justify-content: start;
+  margin-bottom: 10%;
+}
+.fo-main-img {
+  height: 72vh;
+}
+.fo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.fo-readme {
+  border: none;
+}
+.fo-readme:hover {
+  color: #ff5757;
+}
+.fo-logo {
+  /* width: 80px; */
+  height: 80px;
+}
+.fo-title-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 16%;
+  margin-bottom: 8%;
+}
+.fo-title {
+  color: #ff5757;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: -3pt;
+}
+.fo-sub-title {
+  color: #ff5757;
+
+  font-weight: bold;
+}
+.fo-origin {
+  /* width: 36%; */
+  display: flex;
+}
+@media (max-width: 768px) {
+  .fo-origin {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; /* 필요 시 추가 */
+  }
+}
+.fo-origin-text {
+  margin-left: 4%;
+}
+
+p {
+  word-break: keep-all;
+  font-size: 1.2em;
+}
+.fo-develop {
+  width: 88%;
+}
+.fo-circle {
+  width: 35vh;
+  height: 70vh;
+  border-radius: 0 35vh 35vh 0;
+  background-color: #13968f;
+
+  position: absolute;
+
+  margin-top: 50%;
+  z-index: -1;
+  margin-left: -6%;
+}
+.fo-circle-bg {
+  width: 35vh;
+  height: 70vh;
+  border-radius: 0 35vh 35vh 0;
+  background-color: #fff;
+
+  position: absolute;
+
+  margin-top: 50%;
+  margin-left: -6%;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+.fo-feature-block {
+  display: flex;
+  align-items: center;
+}
+.fo-feature-text > h3 {
+  color: #ff5757;
+  font-weight: bold;
+}
+.fo-img {
+  width: 33%;
+  float: right;
+  padding: 30pt;
+  z-index: 3;
+}
+.cpr-message {
+  display: flex;
+  align-items: center;
+}
+.add-meal-text > h3 {
+  color: black;
+}
+.add-meal-title {
+  color: black;
+  font-size: 24pt;
+  margin-top: 10%;
+}
+
+.ts-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.fo-ts-title {
+  font-size: 1.5rem;
+  color: #ff5757;
+  font-weight: bold;
+}
+
+.ts-subtitle {
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.ts-desc {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.ts-problems,
+.ts-solutions,
+.ts-result {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.ts-problems p,
+.ts-solutions p,
+.ts-result p {
+  margin: 0.4rem 0;
+}
+
+.ts-code-img {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ts-code-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

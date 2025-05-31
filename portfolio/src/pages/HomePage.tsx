@@ -16,8 +16,7 @@ const HomePage: React.FC = () => {
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
-      <ScrollToTopButton />
+      
     </main>
   );
 };
