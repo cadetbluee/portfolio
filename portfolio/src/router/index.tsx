@@ -7,8 +7,10 @@ import FleaOnPage from "../pages/FleaOnPage";
 import MeovaPage from "../pages/MeovaPage";
 import Footer from "../layouts/Footer/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import ScrollToTop from "../components/ScrollToTop";
 const AppRouter = () => (
   <Router>
+    <ScrollToTop />
     <Header />
     <Routes>
       <Route path="/" element={<HomePage />} />
