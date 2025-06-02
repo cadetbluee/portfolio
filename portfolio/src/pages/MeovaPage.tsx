@@ -147,6 +147,26 @@ const MeovaPage: React.FC = () => {
         }}
         screenshots={[screenshot1, screenshot2]}
       />
+      <section className="next-project">
+        <button
+          className="m-before-btn"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.location.href = "/project/fleaon"; // 이전 프로젝트 라우트로 이동
+          }}
+        >
+          이전 프로젝트 보기
+        </button>
+        <button
+          className="m-next-btn"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.location.href = "/project/pushoflife"; // 다음 프로젝트 라우트로 이동
+          }}
+        >
+          다음 프로젝트 보기
+        </button>
+      </section>
     </main>
   );
 };

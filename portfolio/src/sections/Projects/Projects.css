@@ -1,22 +1,22 @@
 .projects-section {
   width: 88%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
+  margin-bottom: 30vh;
 }
 
 .projects-title {
   font-size: 60px;
   color: #395758;
   margin-bottom: 8rem;
-  margin-top: 16rem;
+  margin-top: 15rem;
 }
 
 .project-timeline {
   text-align: center;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;

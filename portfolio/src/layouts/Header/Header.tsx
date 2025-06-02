@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNavClick = (targetId: string) => {
+    setMenuOpen(false); // 메뉴 닫기
     if (location.pathname !== "/") {
       navigate("/", { replace: false });
-      // 페이지 전환 후 스크롤하려면 약간의 딜레이 필요
       setTimeout(() => {
         const section = document.getElementById(targetId);
         section?.scrollIntoView({ behavior: "smooth" });
@@ -19,12 +20,18 @@ const Header: React.FC = () => {
       section?.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
-    <header>
-      <h1>
+    <header className="header">
+      <div className="logo">
         <a href="/">cadetbluee</a>
-      </h1>
-      <nav className="category">
+      </div>
+
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
+
+      <nav className={`category ${menuOpen ? "open" : ""}`}>
         <li onClick={() => handleNavClick("home")}>
           <a href="/#home">home</a>
         </li>

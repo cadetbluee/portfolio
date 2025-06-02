@@ -147,6 +147,26 @@ const FleaOnPage: React.FC = () => {
         }}
         screenshots={[screenshot1, screenshot2]}
       />
+      <section className="next-project">
+        <button
+          className="fo-before-btn"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.location.href = "/project/alleat"; // 이전 프로젝트 라우트로 이동
+          }}
+        >
+          이전 프로젝트 보기
+        </button>
+        <button
+          className="fo-next-btn"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.location.href = "/project/meova"; // 다음 프로젝트 라우트로 이동
+          }}
+        >
+          다음 프로젝트 보기
+        </button>
+      </section>
     </main>
   );
 };

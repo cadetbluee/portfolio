@@ -166,3 +166,40 @@ p {
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
+.next-project {
+  width: 88%;
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  display: flex;
+}
+
+.pol-next-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pol-next-btn:hover {
+  background-color: #326bff;
+}
+.pol-before-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pol-before-btn:hover {
+  background-color: black;
+}
