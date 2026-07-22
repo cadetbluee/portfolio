@@ -2,3 +2,9 @@
   margin: 100pt;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 40pt 1.5rem;
+  }
+}

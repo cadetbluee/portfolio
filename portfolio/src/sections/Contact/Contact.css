@@ -1,5 +1,5 @@
 .contact-title {
-  font-size: 60px;
+  font-size: clamp(2.2rem, 8vw, 60px);
   width: 100%;
   color: #395758;
 }

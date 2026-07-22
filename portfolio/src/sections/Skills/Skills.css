@@ -8,10 +8,14 @@
 @media (max-width: 768px) {
   .experience {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 4rem;
+  }
+  .spikes {
+    height: 60pt;
   }
 }
 .experience > h2 {
-  font-size: 60pt;
+  font-size: clamp(2.2rem, 8vw, 60pt);
   color: rgba(57, 87, 88, 1);
   z-index: 1;
 }

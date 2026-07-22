@@ -49,8 +49,6 @@ const FleaOnPage: React.FC = () => {
 
       <section className="fo-develop">
         <h2 className="fo-title">Features</h2>
-        <div className="fo-circle"></div>
-        <div className="fo-circle-bg"></div>
 
         <h3 className="add-meal-title">라이브 방송</h3>
         <div className="fo-feature-block">

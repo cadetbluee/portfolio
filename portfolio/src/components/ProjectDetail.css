@@ -56,3 +56,12 @@
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 1rem 0;
+  }
+  .title-highlight {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}

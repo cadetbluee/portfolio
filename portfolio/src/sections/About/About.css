@@ -7,12 +7,28 @@
 }
 .about > h2 {
   color: rgba(57, 87, 88, 1);
-  font-size: 60pt;
+  font-size: clamp(2.2rem, 8vw, 60pt);
   z-index: 1;
+}
+.about h3 {
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+}
+.about p {
+  line-height: 1.7;
 }
 .ornament {
   position: absolute;
   height: 100pt;
   margin-left: 28%;
   margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 4rem;
+  }
+  .ornament {
+    height: 60pt;
+    margin-left: 40%;
+  }
 }

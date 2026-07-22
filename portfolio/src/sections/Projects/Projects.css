@@ -7,7 +7,7 @@
 }
 
 .projects-title {
-  font-size: 60px;
+  font-size: clamp(2.2rem, 8vw, 60px);
   color: #395758;
   margin-bottom: 8rem;
   margin-top: 15rem;
@@ -30,6 +30,24 @@
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+/* 태블릿: 2열 */
+@media (max-width: 900px) {
+  .projects-title {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  .project-card {
+    width: 40%;
+  }
+}
+
+/* 모바일: 1열 */
+@media (max-width: 560px) {
+  .project-card {
+    width: 80%;
+  }
 }
 
 .project-card:hover {

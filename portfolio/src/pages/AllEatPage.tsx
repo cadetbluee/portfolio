@@ -45,8 +45,6 @@ const AllEatPage = () => {
 
       <section className="ae-develop">
         <h2 className="ae-title">Features</h2>
-        <div className="ae-circle"></div>
-        <div className="ae-circle-bg"></div>
 
         <h3 className="add-meal-title">식단 기록</h3>
         <div className="ae-feature-block">

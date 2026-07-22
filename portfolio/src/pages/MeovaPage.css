@@ -71,31 +71,6 @@ p {
 .m-develop {
   width: 88%;
 }
-.m-circle {
-  width: 35vh;
-  height: 70vh;
-  border-radius: 0 35vh 35vh 0;
-  background-color: white;
-
-  position: absolute;
-
-  margin-top: 50%;
-  z-index: -1;
-  margin-left: -6%;
-}
-.m-circle-bg {
-  width: 35vh;
-  height: 70vh;
-  border-radius: 0 35vh 35vh 0;
-  background-color: #fff;
-
-  position: absolute;
-
-  margin-top: 50%;
-  margin-left: -6%;
-  z-index: 1;
-  mix-blend-mode: difference;
-}
 .m-feature-block {
   display: flex;
   align-items: center;
@@ -208,4 +183,38 @@ p {
 
 .m-before-btn:hover {
   background-color: #ff5757;
+}
+
+/* ===== 모바일 대응 ===== */
+@media (max-width: 768px) {
+  .m-main-img {
+    height: auto;
+    width: 100%;
+  }
+  .m-title-box {
+    margin-top: 6rem;
+    flex-wrap: wrap;
+  }
+  .m-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .m-origin-text {
+    margin-left: 0;
+  }
+  /* 피처 블록: 세로로 쌓고 이미지 전체 폭 */
+  .m-feature-block {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .m-img {
+    width: 100%;
+    float: none;
+    padding: 1rem 0;
+  }
+  .next-project {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 3rem 0;
+  }
 }

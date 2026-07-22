@@ -6,7 +6,7 @@ import "./Hero.css";
 const Hero: React.FC = () => {
   return (
     <section className="hero">
-      <img className="decoration" src={decoration} alt="decoration image" />
+      <img className="decoration" src={decoration} alt="decoration" />
       <div className="content">
         <h1 className="title">
           <MultiTypingEffect

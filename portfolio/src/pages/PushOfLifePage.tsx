@@ -51,8 +51,6 @@ const PushOfLifePage = () => {
       </section>
       <section className="develop">
         <h2 className="pol-title">Features</h2>
-        <div className="circle"></div>
-        <div className="circle-bg"></div>
         <h3 className="cpr-message-title">심폐소생술 가이드 화면</h3>
         <div className="cpr-guide">
           <img className="cpr-img" src={screenshot2} alt="" />

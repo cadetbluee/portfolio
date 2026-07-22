@@ -70,31 +70,6 @@ p {
 .fo-develop {
   width: 88%;
 }
-.fo-circle {
-  width: 35vh;
-  height: 70vh;
-  border-radius: 0 35vh 35vh 0;
-  background-color: #13968f;
-
-  position: absolute;
-
-  margin-top: 50%;
-  z-index: -1;
-  margin-left: -6%;
-}
-.fo-circle-bg {
-  width: 35vh;
-  height: 70vh;
-  border-radius: 0 35vh 35vh 0;
-  background-color: #fff;
-
-  position: absolute;
-
-  margin-top: 50%;
-  margin-left: -6%;
-  z-index: 1;
-  mix-blend-mode: difference;
-}
 .fo-feature-block {
   display: flex;
   align-items: center;
@@ -207,4 +182,37 @@ p {
 
 .fo-before-btn:hover {
   background-color: #326bff;
+}
+
+/* ===== 모바일 대응 ===== */
+@media (max-width: 768px) {
+  .fo-main-img {
+    height: auto;
+    width: 100%;
+  }
+  .fo-title-box {
+    margin-top: 6rem;
+    flex-wrap: wrap;
+  }
+  .fo-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .fo-origin-text {
+    margin-left: 0;
+  }
+  .fo-feature-block {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .fo-img {
+    width: 100%;
+    float: none;
+    padding: 1rem 0;
+  }
+  .next-project {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 3rem 0;
+  }
 }

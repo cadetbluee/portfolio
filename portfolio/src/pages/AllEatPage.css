@@ -68,31 +68,6 @@ p {
 .ae-develop {
   width: 88%;
 }
-.ae-circle {
-  width: 35vh;
-  height: 70vh;
-  border-radius: 0 35vh 35vh 0;
-  background-color: #9b8323;
-
-  position: absolute;
-
-  margin-top: 50%;
-  z-index: -1;
-  margin-left: -6%;
-}
-.ae-circle-bg {
-  width: 35vh;
-  height: 70vh;
-  border-radius: 0 35vh 35vh 0;
-  background-color: #fff;
-
-  position: absolute;
-
-  margin-top: 50%;
-  margin-left: -6%;
-  z-index: 1;
-  mix-blend-mode: difference;
-}
 .ae-feature-block {
   display: flex;
   align-items: center;
@@ -208,4 +183,37 @@ p {
 
 .ae-before-btn:hover {
   background-color: #ff2f7a;
+}
+
+/* ===== 모바일 대응 ===== */
+@media (max-width: 768px) {
+  .ae-main-img {
+    height: auto;
+    width: 100%;
+  }
+  .ae-title-box {
+    margin-top: 6rem;
+    flex-wrap: wrap;
+  }
+  .ae-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .ae-origin-text {
+    margin-left: 0;
+  }
+  .ae-feature-block {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ae-img {
+    width: 100%;
+    float: none;
+    padding: 1rem 0;
+  }
+  .next-project {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 3rem 0;
+  }
 }

@@ -3,7 +3,6 @@ import ProjectDetail from "../components/ProjectDetail";
 import screenshot1 from "../assets/meova1.png";
 import screenshot2 from "../assets/meova2.png";
 import screenshot3 from "../assets/meova3.png";
-import code from "../assets/fleaoncode.png";
 import "./MeovaPage.css";
 import meovaLogo from "../assets/meovaLogo.png";
 
@@ -56,8 +55,6 @@ const MeovaPage: React.FC = () => {
 
       <section className="m-develop">
         <h2 className="m-title">Features</h2>
-        <div className="m-circle"></div>
-        <div className="m-circle-bg"></div>
 
         <h3 className="add-meal-title">영화 상세 페이지</h3>
         <div className="m-feature-block">
