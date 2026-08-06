@@ -52,29 +52,25 @@ const Skills: React.FC = () => {
           <span className="date">2024.01 - 2024.12</span>
         </p>
         <p>
-          SW 역량테스트 A+형 취득 <span className="date">2024.05</span>
+          정보처리기사 <span className="date">2025.09</span>
         </p>
         <p>
-          OPIC AL <span className="date">2024.03</span>
+          웹디자인개발기능사 <span className="date">2024.09</span>
         </p>
         <p>
-          웹디자인기능사 <span className="date">2024.09</span>
+          OPIc Advanced Low <span className="date">2026.03</span>
         </p>
       </div>
 
       <div className="awards-section">
         <h3>Awards</h3>
         <p>
-          삼성 청년 SW 아카데미 관통 프로젝트 1등{" "}
-          <span className="date">2024.05</span>
+          삼성청년SW아카데미 자율 프로젝트 전국대회 일등상{" "}
+          <span className="date">2024.11</span>
         </p>
         <p>
-          삼성 청년 SW 아카데미 1학기 성적우수상{" "}
+          삼성청년SW아카데미 웹 프로젝트 최우수상{" "}
           <span className="date">2024.05</span>
-        </p>
-        <p>
-          삼성 청년 SW 아카데미 자율 프로젝트 결선 1등{" "}
-          <span className="date">2024.12</span>
         </p>
       </div>
     </section>

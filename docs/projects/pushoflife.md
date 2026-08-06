@@ -8,7 +8,7 @@
 | 플랫폼 | Android App · Wear OS |
 | 팀 | 6인 (FE/Mobile 2, WearOS 2, BE/INF 1, BE/DB 1) |
 | 내 역할 | FE / Mobile, UI·UX 디자인, 기획 |
-| 수상 | SSAFY 자율 프로젝트 **결선 1위** |
+| 수상 | SSAFY 자율 프로젝트 **전국대회 일등상** |
 | 저장소 | [project-pushoflife](https://github.com/cadetbluee/project-pushoflife) |
 
 ---
@@ -96,7 +96,7 @@
 - ✅ **모바일 ↔ 워치 BLE 양방향 통신 구현** — 헬퍼가 환자 워치를 터치하면 헬퍼 워치에서 CPR 가이드 자동 실행
 - ✅ **Android 13(Tiramisu) 대응** — 알림 권한 정책 변경에 맞춰 FCM·포그라운드 서비스 재정비
 - ✅ 팀 6인 중 **커밋 150개로 최다 기여**, 모바일 앱과 워치 앱 양쪽 담당
-- 🏆 **SSAFY 자율 프로젝트 결선 1위**
+- 🏆 **SSAFY 자율 프로젝트 전국대회 일등상**
 
 ## 회고
 

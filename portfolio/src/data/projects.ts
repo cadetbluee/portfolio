@@ -352,7 +352,7 @@ export const projects: Project[] = [
       period: "2024.10 - 2024.11",
       platform: "App, Wear OS",
       team: "6인 (FrontEnd 2, BackEnd 4)",
-      result: "자율 프로젝트 결선 1위",
+      result: "자율 프로젝트 전국대회 일등상",
       roles: "FrontEnd, UI/UX Design, 기획",
       environment: {
         language: "Kotlin, Java",
@@ -657,7 +657,7 @@ export const projects: Project[] = [
       period: "2024.05",
       platform: "Web",
       team: "2인 (Fullstack 2)",
-      result: "관통 프로젝트 최우수상 수상",
+      result: "웹 프로젝트 최우수상",
       roles: "BackEnd, FrontEnd, 서버 배포, UI/UX Design, 기획",
       environment: {
         language: "TypeScript, Python, HTML/CSS",
