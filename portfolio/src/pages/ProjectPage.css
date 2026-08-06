@@ -1,0 +1,226 @@
+/*
+ * 프로젝트 상세 페이지 공통 스타일 (pp- = project page).
+ * 홈 카드(Projects.css)와 클래스가 겹치지 않도록 접두사를 붙였다.
+ *
+ * 프로젝트별로 달라지는 값은 ProjectPage.tsx 에서 CSS 변수로 주입한다.
+ *   --accent      프로젝트 대표색
+ *   --hero-height 히어로 이미지 높이
+ *   --prev-hover  이전 프로젝트의 대표색 (버튼 hover)
+ *   --next-hover  다음 프로젝트의 대표색 (버튼 hover)
+ */
+
+.pp-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== 인트로 ===== */
+
+.pp-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 88%;
+  margin-bottom: 10%;
+  justify-content: start;
+}
+
+.pp-title-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 16%;
+  margin-bottom: 8%;
+}
+
+.pp-logo {
+  height: 80px;
+}
+
+.pp-title {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: -3pt;
+}
+
+.pp-sub-title {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.pp-origin {
+  display: flex;
+}
+
+.pp-origin-text {
+  margin-left: 4%;
+}
+
+.pp-hero-img {
+  height: var(--hero-height);
+}
+
+.pp-repo-btn {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.pp-repo-btn:hover {
+  color: var(--accent);
+}
+
+/* ===== Features ===== */
+
+.pp-develop {
+  width: 88%;
+}
+
+.pp-feature-heading {
+  color: black;
+  font-size: 24pt;
+  margin-top: 10%;
+}
+
+.pp-feature-block {
+  display: flex;
+  align-items: center;
+}
+
+.pp-feature-item > h3 {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.pp-feature-img {
+  width: 33%;
+  padding: 30pt;
+  z-index: 3;
+}
+
+/* ===== Trouble shooting ===== */
+
+.pp-troubleshooting {
+  width: 88%;
+}
+
+.pp-ts-subtitle {
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.pp-ts-desc {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.pp-ts-problems,
+.pp-ts-solutions,
+.pp-ts-result {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.pp-ts-problems p,
+.pp-ts-solutions p,
+.pp-ts-result p {
+  margin: 0.4rem 0;
+}
+
+.pp-ts-code-img {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pp-ts-code-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 이전/다음 프로젝트 ===== */
+
+.pp-next-project {
+  width: 88%;
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  display: flex;
+}
+
+.pp-nav-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pp-nav-btn--prev:hover {
+  background-color: var(--prev-hover);
+}
+
+.pp-nav-btn--next:hover {
+  background-color: var(--next-hover);
+}
+
+/* ===== 모바일 대응 ===== */
+
+@media (max-width: 768px) {
+  .pp-origin {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pp-hero-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .pp-title-box {
+    margin-top: 6rem;
+    flex-wrap: wrap;
+  }
+
+  .pp-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .pp-origin-text {
+    margin-left: 0;
+  }
+
+  /* 피처 블록: 세로로 쌓고 이미지 전체 폭 */
+  .pp-feature-block {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pp-feature-img {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .pp-next-project {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+}

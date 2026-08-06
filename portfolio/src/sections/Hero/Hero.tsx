@@ -6,7 +6,8 @@ import "./Hero.css";
 const Hero: React.FC = () => {
   return (
     <section className="hero">
-      <img className="decoration" src={decoration} alt="decoration" />
+      {/* 장식용 이미지 — 의미를 전달하지 않으므로 스크린리더에서 숨긴다 */}
+      <img className="decoration" src={decoration} alt="" aria-hidden="true" />
       <div className="content">
         <h1 className="title">
           <MultiTypingEffect

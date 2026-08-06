@@ -25,6 +25,16 @@ img {
   max-width: 100%;
 }
 
+/*
+ * 본문 문단.
+ * 원래 각 프로젝트 페이지 CSS 에 있던 규칙이 전역으로 새어나가 전체에 적용되고
+ * 있었다. 페이지 CSS 를 통합하면서 의도를 드러내기 위해 여기로 옮겼다.
+ */
+p {
+  word-break: keep-all;
+  font-size: 1.2em;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

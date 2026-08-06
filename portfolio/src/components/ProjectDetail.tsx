@@ -1,37 +1,15 @@
 // src/components/ProjectDetail.tsx
 import React from "react";
+import type { ProjectDetailInfo } from "../data/projects";
 import "./ProjectDetail.css";
 
-interface ProjectDetailProps {
-  logo: string;
-  title: string;
-  subtitle: string;
-  period: string;
-  platform: string;
-  team: string;
-  result?: string;
-  roles: string;
-  environment: {
-    language: string;
-    framework: string;
-    database: string;
-    devops: string;
-    ai?: string;
-  };
-  screenshots: string[];
-}
-
-const ProjectDetail: React.FC<ProjectDetailProps> = ({
-  logo,
-  title,
-  subtitle,
+const ProjectDetail: React.FC<ProjectDetailInfo> = ({
   period,
   platform,
   team,
   result,
   roles,
   environment,
-  screenshots,
 }) => {
   return (
     <section className="project-detail">
