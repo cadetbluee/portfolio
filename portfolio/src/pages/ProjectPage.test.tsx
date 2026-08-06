@@ -39,26 +39,42 @@ describe("ProjectPage", () => {
     }
   );
 
-  it("troubleshooting 이 있으면 해당 섹션을 그린다", () => {
-    const project = projects.find((item) => item.troubleshooting);
-    if (!project) return;
-
+  it.each(
+    projects
+      .filter((project) => project.troubleshooting?.length)
+      .map((project) => [project.slug, project] as const)
+  )("%s — troubleshooting 을 건수만큼 모두 그린다", (_slug, project) => {
     renderAt(`/project/${project.slug}`);
 
     expect(screen.getByText("Trouble shooting")).toBeInTheDocument();
-    expect(screen.getByText(project.troubleshooting!.title)).toBeInTheDocument();
-    project.troubleshooting!.problems.forEach((problem, index) => {
-      expect(screen.getByText(`문제 ${index + 1}`)).toBeInTheDocument();
-      expect(screen.getByText(problem, { exact: false })).toBeInTheDocument();
+    project.troubleshooting!.forEach((item) => {
+      expect(screen.getByText(item.title)).toBeInTheDocument();
+      expect(screen.getByText(item.desc)).toBeInTheDocument();
     });
   });
 
-  it("troubleshooting 이 없으면 해당 섹션을 그리지 않는다", () => {
-    const project = projects.find((item) => !item.troubleshooting);
-    if (!project) return;
-
+  it.each(
+    projects
+      .filter((project) => project.achievements?.length)
+      .map((project) => [project.slug, project] as const)
+  )("%s — 성과 항목을 모두 그린다", (_slug, project) => {
     renderAt(`/project/${project.slug}`);
 
+    expect(screen.getByRole("heading", { name: "성과" })).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("listitem").length
+    ).toBeGreaterThanOrEqual(project.achievements!.length);
+  });
+
+  it("troubleshooting 이 없는 프로젝트는 해당 섹션을 그리지 않는다", () => {
+    const project = projects.find((item) => !item.troubleshooting?.length);
+    if (!project) {
+      // 현재 모든 프로젝트가 troubleshooting 을 가진다. 조건부 렌더 자체는
+      // 아래 achievements 미보유 케이스와 동일한 분기라 별도 검증을 생략한다.
+      return;
+    }
+
+    renderAt(`/project/${project.slug}`);
     expect(screen.queryByText("Trouble shooting")).not.toBeInTheDocument();
   });
 

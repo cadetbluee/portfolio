@@ -112,6 +112,13 @@
   width: 88%;
 }
 
+/* 트러블슈팅이 여러 건일 때 항목 사이를 구분한다 */
+.pp-ts-item + .pp-ts-item {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e5e5e5;
+}
+
 .pp-ts-subtitle {
   font-size: 1.4rem;
   margin-top: 5rem;
@@ -147,6 +154,33 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 성과 ===== */
+
+.pp-achievements {
+  width: 88%;
+  margin-top: 5rem;
+}
+
+.pp-achievement-list {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.pp-achievement-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin: 0.6rem 0;
+  font-size: 1.2em;
+  word-break: keep-all;
+}
+
+.pp-achievement-list li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
 }
 
 /* ===== 이전/다음 프로젝트 ===== */

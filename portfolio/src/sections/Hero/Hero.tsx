@@ -11,7 +11,11 @@ const Hero: React.FC = () => {
       <div className="content">
         <h1 className="title">
           <MultiTypingEffect
-            texts={["직관적인 사용자 경험을 만드는 개발자\n윤채영입니다."]}
+            texts={[
+              "화면부터 배포까지 책임지는\n개발자 윤채영입니다.",
+              "앱과 웹을 혼자 만들고 배포한\n개발자 윤채영입니다.",
+              "동작하는 화면과 정직한 화면을 구분하는\n개발자 윤채영입니다.",
+            ]}
           />
         </h1>
 

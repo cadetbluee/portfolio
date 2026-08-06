@@ -9,12 +9,18 @@
   align-items: center;
   width: 88%;
 }
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
 .contact-link {
   color: black;
   text-decoration: none;
   background-color: gainsboro;
-  padding: 5pt;
-  border-radius: 5%;
+  padding: 5pt 12pt;
+  border-radius: 999px;
 }
 .contact-link:hover {
   color: cadetblue;

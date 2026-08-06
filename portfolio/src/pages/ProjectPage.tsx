@@ -20,7 +20,7 @@ const ProjectPage: React.FC = () => {
   if (!project) return <Navigate to="/" replace />;
 
   const adjacent = getAdjacentProjects(project.slug);
-  const { troubleshooting } = project;
+  const { troubleshooting, achievements } = project;
 
   return (
     <main
@@ -121,41 +121,53 @@ const ProjectPage: React.FC = () => {
         })}
       </section>
 
-      {troubleshooting && (
+      {troubleshooting && troubleshooting.length > 0 && (
         <section className="pp-troubleshooting">
           <h2 className="pp-title">Trouble shooting</h2>
 
-          <h3 className="pp-ts-subtitle">{troubleshooting.title}</h3>
-          <p className="pp-ts-desc">{troubleshooting.desc}</p>
+          {troubleshooting.map((item) => (
+            <article className="pp-ts-item" key={item.title}>
+              <h3 className="pp-ts-subtitle">{item.title}</h3>
+              <p className="pp-ts-desc">{item.desc}</p>
 
-          <div className="pp-ts-problems">
-            {troubleshooting.problems.map((problem, index) => (
-              <p key={problem}>
-                <strong>문제 {index + 1}</strong> {problem}
-              </p>
+              <div className="pp-ts-problems">
+                {item.problems.map((problem, index) => (
+                  <p key={problem}>
+                    <strong>문제 {index + 1}</strong> {withInlineCode(problem)}
+                  </p>
+                ))}
+              </div>
+
+              <div className="pp-ts-solutions">
+                {item.solutions.map((solution) => (
+                  <p key={solution}>➔ {withInlineCode(solution)}</p>
+                ))}
+              </div>
+
+              <div className="pp-ts-result">
+                {item.results.map((result) => (
+                  <p key={result}>✅ {withInlineCode(result)}</p>
+                ))}
+              </div>
+
+              {item.codeImage && (
+                <div className="pp-ts-code-img">
+                  <img src={item.codeImage} alt={item.codeImageAlt ?? ""} />
+                </div>
+              )}
+            </article>
+          ))}
+        </section>
+      )}
+
+      {achievements && achievements.length > 0 && (
+        <section className="pp-achievements">
+          <h2 className="pp-title">성과</h2>
+          <ul className="pp-achievement-list">
+            {achievements.map((item) => (
+              <li key={item}>{withInlineCode(item)}</li>
             ))}
-          </div>
-
-          <div className="pp-ts-solutions">
-            {troubleshooting.solutions.map((solution) => (
-              <p key={solution}>➔ {withInlineCode(solution)}</p>
-            ))}
-          </div>
-
-          <div className="pp-ts-result">
-            {troubleshooting.results.map((result) => (
-              <p key={result}>✅ {withInlineCode(result)}</p>
-            ))}
-          </div>
-
-          {troubleshooting.codeImage && (
-            <div className="pp-ts-code-img">
-              <img
-                src={troubleshooting.codeImage}
-                alt={troubleshooting.codeImageAlt ?? ""}
-              />
-            </div>
-          )}
+          </ul>
         </section>
       )}
 

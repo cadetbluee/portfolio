@@ -4,27 +4,43 @@ import spike from "../../assets/spike.png";
 const Skills: React.FC = () => {
   return (
     <section id="about" className="experience">
-      <img src={spike} alt="spikes" className="spikes" />
+      <img src={spike} alt="" aria-hidden="true" className="spikes" />
       <h2 className="skill-title">Experience</h2>
 
       <div className="skills-section">
         <h3>Skills</h3>
         <div className="skills-table">
           <div className="skill-row">
-            <span className="label">FrontEnd</span>
-            <span>Vue, React, React Native, Kotlin</span>
+            <span className="label">Web</span>
+            <span>React, TypeScript, Next.js (App Router, SSR), Vue, TailwindCSS</span>
+          </div>
+          <div className="skill-row">
+            <span className="label">Mobile</span>
+            <span>Flutter / Dart, Kotlin, Jetpack Compose, React Native</span>
           </div>
           <div className="skill-row">
             <span className="label">BackEnd</span>
-            <span>Django</span>
+            <span>Django (구현·배포), FastAPI · Spring Boot (협업·계약 정합)</span>
+          </div>
+          <div className="skill-row">
+            <span className="label">State</span>
+            <span>Riverpod, Redux-Toolkit</span>
+          </div>
+          <div className="skill-row">
+            <span className="label">연동</span>
+            <span>REST, SSE 스트리밍, OAuth 2.0 / JWT, Firebase Auth</span>
           </div>
           <div className="skill-row">
             <span className="label">DB</span>
-            <span>mySQL, SQLite</span>
+            <span>MySQL, Firebase (Firestore)</span>
           </div>
           <div className="skill-row">
-            <span className="label">ETC</span>
-            <span>Git, Firebase, WebSocket, Jira</span>
+            <span className="label">배포</span>
+            <span>Docker, Jenkins, Nginx, AWS EC2, Firebase Hosting, GitHub Actions</span>
+          </div>
+          <div className="skill-row">
+            <span className="label">협업</span>
+            <span>Git / GitHub / GitLab, Jira, Figma, Notion</span>
           </div>
         </div>
       </div>
