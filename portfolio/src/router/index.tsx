@@ -7,7 +7,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import ScrollToTop from "../components/ScrollToTop";
 
 const AppRouter = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <ScrollToTop />
     <Header />
     <Routes>
