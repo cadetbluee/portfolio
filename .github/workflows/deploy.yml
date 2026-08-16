@@ -42,7 +42,12 @@ jobs:
         run: npm test -- --watchAll=false
 
       - name: Build
+        # 오라클 서버는 루트(/)로, GitHub Pages는 /portfolio 하위경로로 서빙한다.
+        # 로컬(오라클용) 빌드는 PUBLIC_URL이 비어 루트가 되고, CI 빌드만 여기서
+        # /portfolio 를 주입해 자원·라우팅 base를 맞춘다.
         run: npm run build
+        env:
+          PUBLIC_URL: /portfolio
 
       # GitHub Pages 는 서버 라우팅이 없어 /project/donhaeng 같은 주소를 직접
       # 열면 404 를 준다. 404.html 을 index.html 과 같게 두면 그 응답으로
